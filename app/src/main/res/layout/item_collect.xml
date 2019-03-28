@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:paddingBottom="@dimen/common_padding_middle">
+
+    <WebView
+        android:id="@+id/mWebView"
+        style="@style/MatchWrap"
+        android:layout_below="@id/mTitleTv"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <View
+        style="@style/DividerFixedHeight"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:padding="@dimen/common_padding_middle"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/mAnswerTv"
+            style="@style/WrapWrap"
+            android:singleLine="true"
+            android:text="我的答案：A"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+        <TextView
+            android:id="@+id/mCollectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_collect"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="取消"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+
+        <TextView
+            android:id="@+id/mAnalysisTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_analysis"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:layout_marginRight="@dimen/common_margin_middle"
+            android:layout_toLeftOf="@id/mCollectTv"
+            android:gravity="center_vertical"
+            android:text="解析"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mAnalysisLl"
+        style="@style/MatchWrap.Vertical"
+        android:visibility="gone"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/MatchWrap"
+            android:text="答案解析"
+            android:paddingBottom="@dimen/common_padding_middle"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+        <WebView
+            android:id="@+id/mAnalysisWv"
+            style="@style/MatchWrap"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+    </LinearLayout>
+</LinearLayout>

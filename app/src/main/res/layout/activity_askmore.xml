@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:rightIv="@drawable/ic_search"
+        app:titleText="更多问题" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_indicator_height" />
+
+    <View style="@style/DividerFixedHeight" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        style="@style/MatchMatch"/>
+</LinearLayout>

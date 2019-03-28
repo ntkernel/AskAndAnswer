@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/common_white">
+
+    <ImageView
+        android:id="@+id/mCloseIv"
+        android:layout_width="@dimen/common_icon_small_height"
+        android:layout_height="@dimen/common_icon_small_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_margin_big"
+        android:src="@drawable/ic_ask_select" />
+
+    <LinearLayout
+        style="@style/WrapWrap"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/mCloseIv"
+        android:layout_marginBottom="@dimen/common_margin_large"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mTopicLl"
+            style="@style/WrapWrap.Vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/common_margin_large">
+
+            <ImageView
+                android:layout_width="@dimen/common_icon_width"
+                android:layout_height="@dimen/common_icon_height"
+                android:src="@drawable/ic_topic"/>
+            <TextView
+                android:id="@+id/mTopicTv"
+                style="@style/WrapWrap"
+                android:text="题目"
+                android:layout_marginTop="@dimen/common_margin_middle"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_middle_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mOtherLl"
+            style="@style/WrapWrap.Vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/common_margin_large">
+            <ImageView
+                android:layout_width="@dimen/common_icon_width"
+                android:layout_height="@dimen/common_icon_height"
+                android:src="@drawable/ic_other"/>
+            <TextView
+                android:id="@+id/mOtherTv"
+                style="@style/WrapWrap"
+                android:text="其他"
+                android:layout_marginTop="@dimen/common_margin_middle"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_middle_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

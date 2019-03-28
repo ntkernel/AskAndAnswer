@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:rightIv="@drawable/ic_search"
+        app:titleText="老师信息" />
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_blue"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingTop="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle"
+        android:paddingBottom="@dimen/common_padding_large">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mTeaCiv"
+            android:layout_width="@dimen/common_icon_width"
+            android:layout_height="@dimen/common_icon_height"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/common_blue"
+            app:civ_border_width="@dimen/common_divider_width" />
+
+        <LinearLayout
+            style="@style/WrapWrap.Vertical"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:layout_toRightOf="@id/mTeaCiv">
+
+            <LinearLayout style="@style/WrapWrap.Horizontal">
+
+                <TextView
+                    android:id="@+id/mTeaTv"
+                    style="@style/WrapWrap"
+                    android:text="王零"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mTeaLeavlTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="特级教师"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mTeaSchoolTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="北大附中#北京"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_middle_size" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/WrapWrap.Horizontal"
+                android:layout_marginTop="@dimen/common_margin_big">
+
+                <TextView
+                    android:id="@+id/mAnswerTv"
+                    style="@style/WrapWrap"
+                    android:text="回答12"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mLoveTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="点赞30"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/text_middle_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mAttentionIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        style="@style/MatchWrap">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mCanKnowRv"
+            style="@style/MatchMatch">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:rightIv="@drawable/ic_search"
+        app:titleText="我的金币" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_size150"
+        android:paddingLeft="@dimen/common_padding_big"
+        android:orientation="vertical"
+        android:background="@color/common_blue">
+
+        <TextView
+            android:id="@+id/mTextTv"
+          style="@style/WrapWrap"
+            android:text="剩余（个）："
+            android:layout_marginTop="@dimen/common_margin_large_less"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/text_middle_size"/>
+
+        <TextView
+            android:id="@+id/mMoneyTv"
+            style="@style/WrapWrap"
+            android:text="20"
+            android:layout_below="@id/mTextTv"
+            android:layout_marginTop="@dimen/common_margin_large_less"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/text_max_size"/>
+
+        <TextView
+            android:id="@+id/mChargeTv"
+            style="@style/WrapWrap"
+            android:text="去充值"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignBaseline="@id/mMoneyTv"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/text_large_size"/>
+    </RelativeLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mIndicator"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_margin_middle"
+        android:layout_height="@dimen/common_indicator_height" />
+
+    <View style="@style/DividerFixedHeight" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        style="@style/MatchMatch"/>
+</LinearLayout>

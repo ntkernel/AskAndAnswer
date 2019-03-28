@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/common_white"
+    android:padding="@dimen/common_margin_middle">
+
+    <RelativeLayout
+        style="@style/MatchWrap">
+
+        <TextView
+            android:id="@+id/mHistoryTv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+
+        <ImageView
+            android:id="@+id/mDeleteIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:src="@drawable/ic_ask_select"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

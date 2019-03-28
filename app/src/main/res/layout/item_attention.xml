@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap.Vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/mSwip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/WrapWrap.Horizontal">
+
+            <TextView
+                android:id="@+id/mCancleTv"
+                android:layout_width="@dimen/common_size70"
+                android:layout_height="@dimen/common_size70"
+                android:background="@color/common_blue"
+                android:gravity="center"
+                android:text="取消关注"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/mAskTv"
+                android:layout_width="@dimen/common_size70"
+                android:layout_height="@dimen/common_size70"
+                android:background="@color/common_red"
+                android:gravity="center"
+                android:text="提问"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common_padding_middle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mAvatarCiv"
+                android:layout_width="@dimen/common_line_height"
+                android:layout_height="@dimen/common_line_height"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/common_blue"
+                app:civ_border_width="@dimen/common_divider_width" />
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/common_margin_middle">
+
+                <TextView
+                    android:id="@+id/mTeacherTv"
+                    style="@style/WrapWrap"
+                    android:text="王老师"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:id="@+id/mTitleTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:layout_toRightOf="@id/mTeacherTv"
+                    android:text="特级教师"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:id="@+id/mSchoolTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:layout_toRightOf="@id/mTitleTv"
+                    android:text="北大附中#北京"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:id="@+id/mHelpTv"
+                    style="@style/WrapWrap"
+                    android:layout_below="@id/mTeacherTv"
+                    android:layout_marginTop="@dimen/common_margin_middle"
+                    android:text="帮我5次"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

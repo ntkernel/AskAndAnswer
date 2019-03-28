@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:rightIv="@drawable/ic_search"
+        app:titleText="回答" />
+
+    <ScrollView
+        style="@style/MatchMatch.Vertical"
+        android:layout_below="@id/mHeaderBar"
+        android:layout_marginBottom="@dimen/common_margin_large"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/MatchMatch.Vertical">
+
+            <LinearLayout
+                style="@style/MatchWrap.Horizontal"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_middle">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mStuCiv"
+                    android:layout_width="@dimen/common_icon_middle_width"
+                    android:layout_height="@dimen/common_icon_middle_height"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_color="@color/common_blue"
+                    app:civ_border_width="@dimen/common_divider_width" />
+
+                <TextView
+                    android:id="@+id/mStuTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="王零"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mTimeTv"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="2019/01/03"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/mQuestionWv"
+                style="@style/MatchWrap"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:padding="@dimen/common_padding_middle">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mTeaCiv"
+                    android:layout_width="@dimen/common_icon_middle_width"
+                    android:layout_height="@dimen/common_icon_middle_height"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_color="@color/common_blue"
+                    app:civ_border_width="@dimen/common_divider_width" />
+
+                <TextView
+                    android:id="@+id/mTeaTv"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:layout_toRightOf="@id/mTeaCiv"
+                    android:text="王零"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mTeaLeavlTv"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:layout_toRightOf="@id/mTeaTv"
+                    android:text="特级教师"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mTeaSchoolTv"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:layout_toRightOf="@id/mTeaLeavlTv"
+                    android:text="北大附中#北京"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mLoveNumTv"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_loved"
+                    android:drawablePadding="@dimen/common_padding_small"
+                    android:gravity="center_vertical"
+                    android:text="300"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/mAnswerWv"
+                style="@style/MatchWrap"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <LinearLayout
+                android:id="@+id/mResourceLl"
+                style="@style/MatchWrap.Vertical">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mSubjectRl"
+                style="@style/MatchWrap"
+                android:background="@color/common_white"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    android:id="@+id/mSubjectTv"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:text="过关练习 共6题"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/mGotoTv"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="去练习>>"
+                    android:textColor="@color/common_blue"
+                    android:textSize="@dimen/text_middle_size" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MatchWrap"
+                android:padding="@dimen/common_padding_middle"
+                android:text="追问"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <LinearLayout
+                android:id="@+id/mAskLl"
+                style="@style/MatchWrap.Vertical"
+                android:background="@color/common_white"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingTop="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mAskRv"
+                    style="@style/MatchWrap" />
+
+                <View
+                    style="@style/DividerFixedHeight"
+                    android:paddingLeft="@dimen/common_padding_middle"
+                    android:paddingRight="@dimen/common_padding_middle" />
+
+                <ImageView
+                    android:id="@+id/mDownIv"
+                    android:layout_width="@dimen/common_icon_middle_width"
+                    android:layout_height="@dimen/common_icon_middle_height"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/common_padding_middle"
+                    android:src="@drawable/ic_down" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/MatchWrap"
+                android:padding="@dimen/common_padding_middle"
+                android:text="相似问题"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecommendRv"
+                style="@style/MatchWrap" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/mBottomFl"
+        style="@style/MatchWrap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_size55"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_white">
+
+        <RelativeLayout
+            android:id="@+id/mAgainRl"
+            style="@style/MatchMatch"
+            android:layout_height="@dimen/common_margin_large"
+            android:padding="@dimen/common_padding_middle"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/mAgainEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_size40"
+                android:layout_marginRight="@dimen/common_size70"
+                android:background="@drawable/et_bg_color"
+                android:cursorVisible="true"
+                android:paddingLeft="@dimen/common_padding_small"
+                android:paddingRight="@dimen/common_padding_small"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/mConfirmTv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingTop="@dimen/common_padding_small"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:paddingBottom="@dimen/common_padding_small"
+                android:text="提交"
+                android:textColor="@color/text_light_dark" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mBottomLl"
+            style="@style/MatchMatch.Horizontal">
+
+            <LinearLayout
+                android:id="@+id/mLikeLl"
+                android:layout_width="@dimen/common_size0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mLikeIv"
+                    android:layout_width="@dimen/common_icon_small_height"
+                    android:layout_height="@dimen/common_icon_small_height"
+                    android:layout_marginRight="@dimen/common_padding_middle"
+                    android:src="@drawable/ic_unlike" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:gravity="center"
+                    android:text="点赞"
+                    android:textColor="@color/text_light_dark"
+                    android:textSize="@dimen/text_big_size" />
+            </LinearLayout>
+
+            <View style="@style/DividerFixedWidth" />
+
+            <LinearLayout
+                android:id="@+id/mAgainLl"
+                android:layout_width="@dimen/common_size0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/common_icon_small_height"
+                    android:layout_height="@dimen/common_icon_small_height"
+                    android:layout_marginRight="@dimen/common_padding_middle"
+                    android:src="@drawable/ic_again" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:gravity="center"
+                    android:text="追问"
+                    android:textColor="@color/text_light_dark"
+                    android:textSize="@dimen/text_big_size" />
+            </LinearLayout>
+
+            <View style="@style/DividerFixedWidth" />
+
+            <LinearLayout
+                android:id="@+id/mCloseLl"
+                android:layout_width="@dimen/common_size0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/common_icon_small_height"
+                    android:layout_height="@dimen/common_icon_small_height"
+                    android:layout_marginRight="@dimen/common_padding_middle"
+                    android:src="@drawable/ic_end" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:gravity="center"
+                    android:text="结束问题"
+                    android:textColor="@color/text_light_dark"
+                    android:textSize="@dimen/text_big_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <View
+        style="@style/DividerFixedHeight"
+        android:layout_above="@id/mBottomFl" />
+</RelativeLayout>

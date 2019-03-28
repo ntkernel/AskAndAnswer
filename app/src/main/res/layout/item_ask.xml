@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/common_padding_middle"
+    style="@style/MatchWrap">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mStuCiv"
+        android:layout_width="@dimen/common_icon_middle_width"
+        android:layout_height="@dimen/common_icon_middle_height"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/common_blue"
+        app:civ_border_width="@dimen/common_divider_width" />
+
+    <TextView
+        android:id="@+id/mNameTv"
+        style="@style/WrapWrap"
+        android:layout_toRightOf="@id/mStuCiv"
+        android:layout_marginLeft="@dimen/common_margin_middle"
+        android:layout_marginTop="@dimen/common_margin_small"
+        android:text="王零"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+
+    <TextView
+        android:id="@+id/mTimeTv"
+        style="@style/WrapWrap"
+        android:layout_toRightOf="@id/mNameTv"
+        android:layout_alignBaseline="@id/mStuCiv"
+        android:layout_marginLeft="@dimen/common_margin_middle"
+        android:layout_marginTop="@dimen/common_margin_small"
+        android:text="2019/01/03"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+
+    <TextView
+        android:id="@+id/mContentTv"
+        style="@style/WrapWrap"
+        android:layout_marginLeft="@dimen/common_margin_large_middle"
+        android:layout_below="@id/mStuCiv"
+        android:text="王零"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rich_heading_text_color">#000000</color>
+    <color name="rich_hint_text_color">#7f7f7f</color>
+    <color name="rich_paragraph_text_color">#333333</color>
+    <dimen name="rich_font_heading_1">20sp</dimen>
+    <dimen name="rich_font_heading_2">18sp</dimen>
+    <dimen name="rich_font_heading_3">16sp</dimen>
+    <dimen name="rich_font_paragraph">14sp</dimen>
+    <string name="cwac_richedittext_background">Background</string>
+    <string name="cwac_richedittext_bold">Bold</string>
+    <string name="cwac_richedittext_center">Center</string>
+    <string name="cwac_richedittext_color">Color</string>
+    <string name="cwac_richedittext_effects">Effects</string>
+    <string name="cwac_richedittext_fonts">Fonts</string>
+    <string name="cwac_richedittext_foreground">Foreground</string>
+    <string name="cwac_richedittext_format">Format</string>
+    <string name="cwac_richedittext_grow">Grow</string>
+    <string name="cwac_richedittext_italic">Italic</string>
+    <string name="cwac_richedittext_lines">Lines</string>
+    <string name="cwac_richedittext_mono">Monospace</string>
+    <string name="cwac_richedittext_normal">Normal</string>
+    <string name="cwac_richedittext_opposite">Opposite</string>
+    <string name="cwac_richedittext_sans">Sans Serif</string>
+    <string name="cwac_richedittext_serif">Serif</string>
+    <string name="cwac_richedittext_shrink">Shrink</string>
+    <string name="cwac_richedittext_size">Size</string>
+    <string name="cwac_richedittext_strikethrough">Strikethrough</string>
+    <string name="cwac_richedittext_subscript">Subscript</string>
+    <string name="cwac_richedittext_superscript">Superscript</string>
+    <string name="cwac_richedittext_underline">Underline</string>
+    <string name="new_heading">新标题</string>
+    <string name="new_paragraph">新段落</string>
+    <declare-styleable name="RichTextEditor">
+        <attr format="dimension" name="rich_textSize"/>
+        <attr format="color" name="rich_textColor"/>
+        <attr format="string" name="rich_hint"/>
+        <attr format="color" name="rich_hintTextColor"/>
+        <attr format="dimension" name="rich_paddingLeft"/>
+        <attr format="dimension" name="rich_paddingRight"/>
+        <attr format="dimension" name="rich_paddingTop"/>
+        <attr format="dimension" name="rich_paddingBottom"/>
+    </declare-styleable>
+</resources>

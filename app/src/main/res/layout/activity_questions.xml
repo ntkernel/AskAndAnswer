@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:titleText="题目练习" />
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:layout_below="@id/mHeaderBar"
+        android:layout_marginBottom="@dimen/common_margin_large"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:layout_marginBottom="@dimen/common_margin_large_less"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/mQuestionVf"
+                style="@style/MatchWrap"
+                android:layout_marginBottom="@dimen/common_margin_large_less"
+                android:autoStart="false" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mBottomLl"
+        style="@style/MatchMatch.Horizontal"
+        android:layout_height="@dimen/common_margin_large"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_white">
+
+        <LinearLayout
+            android:id="@+id/mCollectLl"
+            android:layout_width="@dimen/common_size0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mCollectTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_uncollect"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:text="收藏"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_big_size" />
+        </LinearLayout>
+
+        <View style="@style/DividerFixedWidth" />
+
+        <TextView
+            android:id="@+id/mAskTv"
+            android:layout_width="@dimen/common_size0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="去提问"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <View style="@style/DividerFixedWidth" />
+
+        <TextView
+            android:id="@+id/mPreTv"
+            android:layout_width="@dimen/common_size0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="上一题"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <View style="@style/DividerFixedWidth" />
+
+        <TextView
+            android:id="@+id/mNextTv"
+            android:layout_width="@dimen/common_size0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="下一题"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+    </LinearLayout>
+
+</RelativeLayout>

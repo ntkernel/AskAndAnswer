@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical">
+
+    <WebView
+        android:id="@+id/mWebView"
+        style="@style/MatchWrap"
+        android:layout_below="@id/mTitleTv"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <RadioGroup
+        android:id="@+id/mSelectRg"
+        style="@style/WrapWrap.Horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <RadioButton
+            android:id="@+id/mARb"
+            android:layout_width="@dimen/common_size70"
+            android:layout_height="@dimen/common_size35"
+            android:background="@drawable/question_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/text_question_color"
+            android:textSize="@dimen/text_middle_size" />
+
+        <RadioButton
+            android:id="@+id/mBRb"
+            android:layout_width="@dimen/common_size70"
+            android:layout_height="@dimen/common_size35"
+            android:layout_marginLeft="@dimen/common_margin_big"
+            android:layout_marginRight="@dimen/common_margin_big"
+            android:background="@drawable/question_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@color/text_question_color"
+            android:textSize="@dimen/text_middle_size" />
+
+        <RadioButton
+            android:id="@+id/mCRb"
+            android:layout_width="@dimen/common_size70"
+            android:layout_height="@dimen/common_size35"
+            android:layout_marginRight="@dimen/common_margin_big"
+            android:background="@drawable/question_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/text_question_color"
+            android:textSize="@dimen/text_middle_size" />
+
+        <RadioButton
+            android:id="@+id/mDRb"
+            android:layout_width="@dimen/common_size70"
+            android:layout_height="@dimen/common_size35"
+            android:background="@drawable/question_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@color/text_question_color"
+            android:textSize="@dimen/text_middle_size" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/MatchWrap"
+        android:padding="@dimen/common_padding_middle"
+        android:text="答案解析"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_middle_size" />
+
+    <FrameLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            android:id="@+id/mTipTv"
+            style="@style/MatchWrap"
+            android:text="提交了才能查看答案和解析哦"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+        <WebView
+            android:id="@+id/mAnalysisWv"
+            style="@style/MatchWrap"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        style="@style/MatchWrap"
+        android:padding="@dimen/common_padding_middle"
+        android:text="添加笔记"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_middle_size" />
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <EditText
+            android:id="@+id/mRemarkEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size40"
+            android:background="@drawable/et_bg_color"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:paddingRight="@dimen/common_padding_small" />
+    </LinearLayout>
+</LinearLayout>

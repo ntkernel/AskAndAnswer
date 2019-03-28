@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:titleText="登录" />
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/border_corner_all">
+
+        <EditText
+            android:id="@+id/mMobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:drawableLeft="@drawable/ic_user_name"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/common_padding_small" />
+
+        <View style="@style/DividerFixedHeight" />
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:paddingRight="@dimen/common_padding_small">
+
+            <EditText
+                android:id="@+id/mPwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line_height"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_pwd"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/mEyeIv"
+                android:layout_width="@dimen/common_icon_small_width"
+                android:layout_height="@dimen/common_icon_small_height"
+                android:layout_marginRight="@dimen/common_margin_small"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_eye_on"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mLoginBtn"
+        style="@style/FullBtnStyle"
+        android:text="登录" />
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin">
+
+        <TextView
+            android:id="@+id/mRegisterTv"
+            style="@style/WrapWrap"
+            android:text="注册"
+            android:textColor="@color/common_blue" />
+
+        <TextView
+            android:id="@+id/mForgetPwdTv"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:text="忘记密码？"
+            android:textColor="@color/common_blue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

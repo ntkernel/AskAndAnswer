@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_size200"
+    android:background="@color/common_white"
+    android:gravity="center">
+
+    <TextView
+        style="@style/WrapWrap"
+        android:text="题目载入出错！"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_middle_size"/>
+
+</LinearLayout>

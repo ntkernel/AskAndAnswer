@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MatchWrap.Horizontal"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingBottom="@dimen/common_padding_middle"
+        android:background="@color/common_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/mResourceIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:src="@drawable/ic_word"/>
+
+        <TextView
+            android:id="@+id/mResourceTv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:layout_toRightOf="@id/mTeaLeavlTv"
+            android:text="北大附中#北京"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+    </LinearLayout>

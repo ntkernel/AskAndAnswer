@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruiyi.askandanswer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="任意字符"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".main.activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".user.activity.LoginActivity"
+            android:label="登陆界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:label="主界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".user.activity.RegisterActivity"
+            android:label="注册界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".user.activity.ForgetPwdActivity"
+            android:label="忘记密码界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.AskMoreActivity"
+            android:label="查看更多界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.SearchActivity"
+            android:label="搜索界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.AnswerActivity"
+            android:label="问答详情界面"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ask.activity.PdfViewActivity"
+            android:label="pdf查看界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.VideoViewActivity"
+            android:label="视频查看界面"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ask.activity.QuestionsActivity"
+            android:label="题目练习"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.TeacherInfoActivity"
+            android:label="老师信息界面"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ask.activity.AskActivity"
+            android:label="提问界面"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"
+            android:launchMode="standard" />
+        <activity
+            android:name=".user.activity.SettingActivity"
+            android:label="设置界面"
+            android:launchMode="standard" />
+        <activity
+            android:name=".user.activity.ModifyPwdActivity"
+            android:label="修改密码界面" />
+        <activity
+            android:name=".user.activity.ModifyPhoneActivity"
+            android:label="修改手机号界面" />
+        <activity
+            android:name=".user.activity.ModifySchoolActivity"
+            android:label="修改学校界面" />
+        <activity
+            android:name=".user.activity.ModifyGradeActivity"
+            android:label="修改年级界面" />
+        <activity
+            android:name=".user.activity.MyFootActivity"
+            android:label="我的足迹界面" />
+        <activity
+            android:name=".user.activity.MyCollectActivity"
+            android:label="我的收藏界面" />
+        <activity
+            android:name=".user.activity.MyAskActivity"
+            android:label="我的提问界面" />
+        <activity
+            android:name=".user.activity.MyAttentionActivity"
+            android:label="我的关注界面" />
+        <activity
+            android:name=".user.activity.MyGoldActivity"
+            android:label="我的金币界面" />
+        <activity
+            android:name=".user.activity.RechargeActivity"
+            android:label="充值界面" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="微信支付"
+            android:launchMode="singleTask"
+            android:taskAffinity="net.sourceforge.simcpux"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ruiyi.askandanswer.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/common_white"
+    android:gravity="center">
+
+    <TextView
+        style="@style/WrapWrap"
+        android:text="暂无问答"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_middle_size"/>
+
+</LinearLayout>

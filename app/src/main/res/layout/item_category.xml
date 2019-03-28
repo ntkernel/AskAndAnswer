@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical">
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding">
+
+        <ImageView
+            android:id="@+id/mLeftIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"/>
+
+        <TextView
+            android:id="@+id/mNameTv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_toRightOf="@id/mLeftIv"
+            style="@style/WrapWrap"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/text_light_dark"/>
+
+        <ImageView
+            android:id="@+id/mNextIv"
+            android:layout_width="@dimen/common_icon_mini_width"
+            android:layout_height="@dimen/common_icon_mini_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/mNumberTv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_toLeftOf="@id/mNextIv"
+            style="@style/WrapWrap"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/text_normal"/>
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight"/>
+</LinearLayout>

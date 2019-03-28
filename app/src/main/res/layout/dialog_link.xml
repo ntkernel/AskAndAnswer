@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:padding="@dimen/common_margin_middle">
+
+    <EditText
+        android:id="@+id/mTextEt"
+        style="@style/MatchWrap"
+        android:hint="输入文字" />
+
+    <EditText
+        android:id="@+id/mLinkEt"
+        android:layout_marginTop="@dimen/common_margin_middle"
+        style="@style/MatchWrap"
+        android:hint="输入链接"/>
+</LinearLayout>

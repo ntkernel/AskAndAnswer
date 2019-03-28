@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/common_padding_middle"
+    style="@style/MatchWrap.Vertical">
+
+    <TextView
+        android:id="@+id/mTitleTv"
+        style="@style/WrapWrap"
+        android:text="王零"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+</LinearLayout>

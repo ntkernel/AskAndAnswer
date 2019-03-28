@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:titleText="设置" />
+
+    <RelativeLayout
+        android:id="@+id/mNameRl"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="账号"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <TextView
+            android:id="@+id/mNameTv"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_big"
+            android:text="账号"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight" />
+
+    <RelativeLayout
+        android:id="@+id/mPhoneRl"
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="手机号"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <ImageView
+            android:id="@+id/mPhoneNextIv"
+            android:layout_width="@dimen/common_icon_mini_width"
+            android:layout_height="@dimen/common_icon_mini_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/mPhoneTv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:layout_toLeftOf="@id/mPhoneNextIv"
+            android:text="1529510178"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight" />
+
+    <RelativeLayout
+        android:id="@+id/mPwdRl"
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="修改密码"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <ImageView
+            android:layout_width="@dimen/common_icon_mini_width"
+            android:layout_height="@dimen/common_icon_mini_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight" />
+
+    <RelativeLayout
+        android:id="@+id/mSchoolRl"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/common_margin_big"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="学校"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <ImageView
+            android:id="@+id/mSchoolNextIv"
+            android:layout_width="@dimen/common_icon_mini_width"
+            android:layout_height="@dimen/common_icon_mini_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/mSchoolTv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:layout_toLeftOf="@id/mSchoolNextIv"
+            android:text="青岛二中"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight" />
+
+    <RelativeLayout
+        android:id="@+id/mGradeRl"
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="年级"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_big_size" />
+
+        <ImageView
+            android:id="@+id/mGradeNextIv"
+            android:layout_width="@dimen/common_icon_mini_width"
+            android:layout_height="@dimen/common_icon_mini_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/mGradeTv"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:layout_toLeftOf="@id/mGradeNextIv"
+            android:text="高二"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerFixedHeight" />
+
+    <Button
+        android:id="@+id/mExitBtn"
+        style="@style/FullBtnStyle"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:enabled="true"
+        android:text="退出" />
+</LinearLayout>

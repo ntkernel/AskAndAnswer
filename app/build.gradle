@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.ruiyi.askandanswer"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //Android Support
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //Retrofit 网络加载框架OkHttp的加强版
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    // RxJava and RxAndroid
+    implementation 'io.reactivex:rxjava:1.3.8'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    //Rxbus 事件交互
+    implementation 'com.hwangjr.rxbus:rxbus:2.0.1'
+    //Dagger2 依赖注入
+    implementation 'com.google.dagger:dagger:2.20'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.20'
+    //RxLifecycle 解决RxJava使用中的内存泄漏问题
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    //ButterKnife View注入框架去除findviewById
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //底部导航
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+    //轮播图
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    //XRecyclerView 实现了下拉刷新，滚动到底部加载更多以及添加header功能的的RecyclerView
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    //圆形头像
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    //通用RecyclerView适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.44'
+    //魔法导航
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //pdf查看
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //权限申请
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //富文本编辑
+    implementation project(':library')
+    //获取照片
+    implementation 'com.github.HuanTanSheng:EasyPhotos:2.3.6'
+    implementation 'com.zhihu.android:matisse:0.5.0-alpha4'
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.5.0") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    //侧滑
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    //支付宝
+    implementation (name: 'alipaySdk-15.5.9-20181123210601', ext: 'aar')
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //三级联动
+    implementation 'com.contrarywind:Android-PickerView:4.1.7'
+    //视频播放
+    implementation 'com.shuyu:GSYVideoPlayer:6.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

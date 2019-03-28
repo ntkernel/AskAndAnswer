@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <RadioGroup
+        android:id="@+id/mAskRg"
+        style="@style/WrapWrap"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mKnowRb"
+            android:layout_width="@dimen/common_size100"
+            android:layout_height="@dimen/common_indicator_height"
+            android:gravity="center"
+            android:text="你可能想知道"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/bg_tab_selector"
+            android:textColor="@color/tab_main_text_color"/>
+
+        <RadioButton
+            android:id="@+id/mErrorRb"
+            android:layout_width="@dimen/common_size100"
+            android:layout_height="@dimen/common_indicator_height"
+            android:gravity="center"
+            android:button="@null"
+            android:text="错题"
+            android:background="@drawable/bg_tab_selector"
+            android:textColor="@color/tab_main_text_color"/>
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        style="@style/MatchMatch"/>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/mContentLl"-->
+        <!--style="@style/MatchMatch"-->
+        <!--android:background="@color/common_bg"-->
+        <!--android:orientation="vertical"/>-->
+</LinearLayout>

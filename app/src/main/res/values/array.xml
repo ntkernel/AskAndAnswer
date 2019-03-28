@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gradeArray">
+        <item>高一</item>
+        <item>高二</item>
+        <item>高三</item>
+    </string-array>
+    <string-array name="genderArray">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <declare-styleable name="category_item">
+        <attr name="txt" format="string" />
+        <attr name="num" format="string" />
+        <attr name="txt_color" format="color" />
+        <attr name="txt_size" format="integer" />
+        <attr name="img_left_src" format="reference" />
+        <attr name="img_left_width" format="dimension" />
+        <attr name="img_left_height" format="dimension" />
+        <attr name="img_right_src" format="reference" />
+        <attr name="img_right_width" format="dimension" />
+        <attr name="img_right_height" format="dimension" />
+        <attr name="img_right_visiable" format="boolean" />
+    </declare-styleable>
+</resources>

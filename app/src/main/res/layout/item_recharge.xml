@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Vertical"
+    android:layout_height="@dimen/common_size40"
+    android:background="@color/common_white"
+    android:layout_marginBottom="@dimen/common_margin_middle"
+    android:padding="@dimen/common_padding_middle">
+
+    <TextView
+        android:id="@+id/mPayNameTv"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:text="支付宝转入"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_middle_size" />
+
+    <TextView
+        android:id="@+id/mTimeTv"
+        style="@style/WrapWrap"
+        android:layout_toRightOf="@id/mPayNameTv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_middle"
+        android:text="2019-1-1"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+
+    <TextView
+        android:id="@+id/mTotalTv"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="20"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/text_middle_size" />
+
+    <View
+        android:id="@+id/mView"
+        android:layout_toLeftOf="@id/mTotalTv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_margin_small"
+        style="@style/DividerFixedWidth"/>
+
+    <TextView
+        android:id="@+id/mNumTv"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/mView"
+        android:layout_marginRight="@dimen/common_margin_small"
+        android:text="+5"
+        android:textColor="@color/text_light_dark"
+        android:textSize="@dimen/text_small_size" />
+</RelativeLayout>

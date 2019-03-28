@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/common_bg">
+
+    <!--<ScrollView-->
+    <!--style="@style/MatchMatch"-->
+    <!--android:scrollbars="none">-->
+
+    <LinearLayout style="@style/MatchMatch.Vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/mBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_max_width"
+            android:background="@color/common_white"
+            app:canLoop="true">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:padding="@dimen/common_padding_middle">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="你可能想知道"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/mMoreTv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:text="查看更多"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_middle_size" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefreshlayout"
+            style="@style/MatchWrap">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mCanKnowRv"
+                style="@style/MatchWrap">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

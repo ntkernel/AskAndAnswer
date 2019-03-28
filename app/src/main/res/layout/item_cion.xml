@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap.Vertical"
+    android:paddingBottom="@dimen/common_margin_middle">
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_margin_middle">
+
+        <RelativeLayout style="@style/MatchWrap">
+
+            <TextView
+                android:id="@+id/mTitleTv"
+                style="@style/WrapWrap"
+                android:layout_marginRight="@dimen/common_margin_large"
+                android:singleLine="true"
+                android:text="怎样理解函数的导数？"
+                android:textColor="@color/text_light_dark"
+                android:textSize="@dimen/text_big_size" />
+
+            <TextView
+                android:id="@+id/mCionTv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="300"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MatchWrap">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mTeaCiv"
+                android:layout_width="@dimen/common_icon_middle_width"
+                android:layout_height="@dimen/common_icon_middle_height"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/common_blue"
+                app:civ_border_width="@dimen/common_divider_width" />
+
+            <TextView
+                android:id="@+id/mTeaTv"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_middle"
+                android:layout_toRightOf="@id/mTeaCiv"
+                android:text="王零"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/mTeaLeavlTv"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_middle"
+                android:layout_toRightOf="@id/mTeaTv"
+                android:text="特级教师"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/mTeaSchoolTv"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_middle"
+                android:layout_toRightOf="@id/mTeaLeavlTv"
+                android:text="北大附中#北京"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mContentTv"
+            style="@style/MatchWrap"
+            android:maxLines="2"
+            android:text="dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap.Vertical"
+    android:paddingBottom="@dimen/common_padding">
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_margin_middle">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mAvatarCiv"
+            android:layout_width="@dimen/common_line_height"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/common_blue"
+            app:civ_border_width="@dimen/common_divider_width" />
+
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:layout_marginLeft="@dimen/common_margin_middle">
+
+            <RelativeLayout style="@style/MatchWrap">
+
+                <TextView
+                    android:id="@+id/mTitleTv"
+                    style="@style/WrapWrap"
+                    android:maxLength="15"
+                    android:text="怎样理解函数的导数？"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_dark"
+                    android:textSize="@dimen/text_big_size" />
+
+                <TextView
+                    android:id="@+id/mTimeTv"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_middle"
+                    android:text="09:00"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_middle_size" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mContentTv"
+                style="@style/MatchWrap"
+                android:maxLines="2"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <RelativeLayout style="@style/MatchWrap">
+
+            <TextView
+                android:id="@+id/mTeacherTv"
+                style="@style/WrapWrap"
+                android:text="王老师"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/mSchoolTv"
+                style="@style/WrapWrap"
+                android:text="北大附中#北京"
+                android:layout_toRightOf="@id/mTeacherTv"
+                android:layout_marginLeft="@dimen/common_margin_middle"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_small_size" />
+
+                <TextView
+                    android:id="@+id/mReadTv"
+                    style="@style/WrapWrap"
+                    android:text="300"
+                    android:drawableLeft="@drawable/ic_eye_on"
+                    android:drawablePadding="@dimen/common_padding_small"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_small_size"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

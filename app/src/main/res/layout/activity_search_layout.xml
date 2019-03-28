@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_bg"
+    style="@style/MatchMatch.Vertical">
+
+    <RelativeLayout
+        android:id="@+id/mSearchBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_header_bar_height"
+        android:background="@color/common_blue"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/common_margin_middle">
+
+        <ImageView
+            android:id="@+id/mBackIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:src="@drawable/ic_back" />
+
+        <com.ruiyi.askandanswer.widgets.IconCenterEditText
+            android:id="@+id/mSearchEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size35"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/common_margin_large"
+            android:layout_marginRight="@dimen/common_margin_large"
+            android:background="@color/common_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical"
+            android:hint="输入关键词"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/common_padding_middle"
+            android:singleLine="true"
+            android:textColorHint="@color/text_dark" />
+
+        <TextView
+            android:id="@+id/mCancleTv"
+            style="@style/WrapWrap"
+            android:layout_alignBaseline="@id/mSearchEt"
+            android:layout_alignParentRight="true"
+            android:text="取消"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/text_big_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mHistoryLl"
+        style="@style/MatchWrap.Vertical">
+
+        <TextView
+            style="@style/MatchWrap"
+            android:padding="@dimen/common_padding_middle"
+            android:text="搜索历史"
+            android:textSize="@dimen/text_middle_size"
+            android:textColor="@color/text_normal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mHistoryRv"
+            style="@style/MatchWrap">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mResultRv"
+        style="@style/MatchMatch"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

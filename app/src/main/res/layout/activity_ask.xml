@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+
+    <com.ruiyi.askandanswer.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        style="@style/MatchWrap"
+        android:layout_height="@dimen/common_header_bar_height"
+        app:rightText="提交"
+        app:titleText="提问" />
+
+    <LinearLayout
+        android:id="@+id/mAnswerLl"
+        style="@style/MatchWrap.Horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginRight="@dimen/common_margin_middle"
+            android:text="回答人："
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mAvatarCiv"
+            android:layout_width="@dimen/common_icon_middle_width"
+            android:layout_height="@dimen/common_icon_middle_height"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/common_blue"
+            app:civ_border_width="@dimen/common_divider_width" />
+
+        <TextView
+            android:id="@+id/mTeaTv"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:text="王老师"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:padding="@dimen/common_margin_middle">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/mSubjectSp"
+            android:layout_width="@dimen/common_size100"
+            android:layout_height="@dimen/common_size30"
+            android:dropDownWidth="wrap_content"
+            android:dropDownVerticalOffset="@dimen/common_size30"
+            android:spinnerMode="dropdown" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/mGradeSp"
+            android:layout_width="@dimen/common_size150"
+            android:layout_height="@dimen/common_size30"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:layout_marginEnd="0dp"
+            android:layout_toRightOf="@id/mSubjectSp"
+            android:dropDownWidth="wrap_content"
+            android:dropDownVerticalOffset="@dimen/common_size30"
+            android:spinnerMode="dropdown" />
+
+        <Switch
+            android:id="@+id/mPublicSw"
+            android:layout_width="@dimen/common_size40"
+            android:layout_height="@dimen/common_size30"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:switchMinWidth="20dp"
+            android:textOff="  "
+            android:textOn="  "
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_middle"
+            android:layout_toLeftOf="@id/mPublicSw"
+            android:text="公开"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_middle_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_margin_middle">
+
+        <ImageView
+            android:id="@+id/mPictureIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:src="@drawable/ic_pictrue" />
+
+        <ImageView
+            android:id="@+id/mBoldIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:src="@drawable/ic_blod" />
+
+        <ImageView
+            android:id="@+id/mHeaderIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:src="@drawable/ic_header" />
+
+        <ImageView
+            android:id="@+id/mPIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:src="@drawable/ic_p" />
+
+        <ImageView
+            android:id="@+id/mLinkIv"
+            android:layout_width="@dimen/common_icon_small_width"
+            android:layout_height="@dimen/common_icon_small_height"
+            android:layout_marginLeft="@dimen/common_margin_middle"
+            android:src="@drawable/ic_link"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/mWebView"
+        style="@style/MatchWrap"
+        android:layout_below="@id/mTitleTv"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <io.github.yedaxia.richeditor.RichTextEditor
+        android:id="@+id/mRichEditor"
+        style="@style/MatchMatch"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_margin_middle"
+        app:rich_hint="写点什么吧......"
+        app:rich_hintTextColor="@color/text_dark"
+        app:rich_textColor="@color/text_light_dark"
+        app:rich_textSize="@dimen/text_middle_size" />
+
+</LinearLayout>

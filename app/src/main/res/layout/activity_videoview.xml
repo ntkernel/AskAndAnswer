@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_size45"
+        android:background="@color/common_blue">
+
+        <ImageView
+            android:id="@+id/mLeftIv"
+            style="@style/WrapMatch"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/mTitleTv"
+            android:layout_width="@dimen/common_size200"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <com.ruiyi.askandanswer.exo.GSYExo2PlayerView
+        android:id="@+id/mVideo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_size200" />
+
+</LinearLayout>

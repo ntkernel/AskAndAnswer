@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:paddingBottom="@dimen/common_padding_middle">
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_white"
+        android:padding="@dimen/common_padding_middle">
+
+        <TextView
+            android:id="@+id/mTitleTv"
+            style="@style/WrapWrap"
+            android:textColor="@color/text_light_dark"
+            android:textSize="@dimen/text_middle_size" />
+
+        <WebView
+            android:id="@+id/mWebView"
+            style="@style/MatchWrap"
+            android:layout_below="@id/mTitleTv"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:layout_below="@+id/mWebView">
+
+            <TextView
+                android:id="@+id/mWrongRateTv"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android:id="@+id/mAskTv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_common_selector"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingTop="@dimen/common_padding_small"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:paddingBottom="@dimen/common_padding_small"
+                android:text="提问"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/text_middle_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
